@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/vite.svg"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Vite App</title>
+    </head>
+    <body>
+        <header>
+            <h1>All HTML Elements</h1>
+            <nav>
+                <ul>
+                    <li><a href="#headings">Headings</a></li>
+                    <li><a href="#text">Text</a></li>
+                    <li><a href="#embedded">Embedded</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#interactive">Interactive</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="headings">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </section>
+
+            <section id="text">
+                <h2>Text Elements</h2>
+                <p>
+                    This is a paragraph with <strong>strong</strong> and <em>emphasized</em> text.
+                </p>
+                <blockquote>This is a blockquote.</blockquote>
+                <pre><code>This is preformatted code.</code></pre>
+                <abbr title="HyperText Markup Language">HTML</abbr>
+                <br />
+                <hr />
+                <mark>Marked text</mark>
+                <small>Small text</small>
+                <sub>Subscript</sub> and <sup>superscript</sup> <del>Deleted text</del> and
+                <ins>inserted text</ins>
+                <dfn>Definition term</dfn>
+                Citation
+                <q>Short quotation</q>
+                <time datetime="2024-09-09">September 9, 2024</time>
+                <var>Variable</var>
+                <kbd>Keyboard input</kbd>
+                <samp>Sample output</samp>
+            </section>
+
+            <section id="embedded">
+                <h2>Embedded Elements</h2>
+                <audio controls>
+                    <source
+                        src="audio.mp3"
+                        type="audio/mpeg"
+                    />
+                    Your browser does not support the audio element.
+                </audio>
+                <video
+                    width="320"
+                    height="240"
+                    controls
+                >
+                    <source
+                        src="video.mp4"
+                        type="video/mp4"
+                    />
+                    <track
+                        kind="subtitles"
+                        src="subtitles.vtt"
+                        srclang="en"
+                        label="English"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+                <canvas
+                    id="myCanvas"
+                    width="200"
+                    height="100"
+                ></canvas>
+                <img
+                    src="/api/placeholder/200/100"
+                    alt="Placeholder image"
+                />
+                <figure>
+                    <img
+                        src="/api/placeholder/200/100"
+                        alt="Figure image"
+                    />
+                    <figcaption>Figure caption</figcaption>
+                </figure>
+                <iframe
+                    src="about:blank"
+                    width="300"
+                    height="200"
+                ></iframe>
+                <embed
+                    type="text/html"
+                    src="about:blank"
+                    width="300"
+                    height="200"
+                />
+                <object
+                    data="about:blank"
+                    width="300"
+                    height="200"
+                >
+                    <param
+                        name="autoplay"
+                        value="true"
+                    />
+                </object>
+                <svg
+                    width="100"
+                    height="100"
+                >
+                    <circle
+                        cx="50"
+                        cy="50"
+                        r="40"
+                        stroke="black"
+                        stroke-width="3"
+                        fill="red"
+                    />
+                </svg>
+                <map name="imagemap">
+                    <area
+                        shape="rect"
+                        coords="0,0,100,100"
+                        alt="Rectangle"
+                        href="#"
+                    />
+                </map>
+                <picture>
+                    <source
+                        media="(min-width: 650px)"
+                        srcset="/api/placeholder/200/100"
+                    />
+                    <source
+                        media="(min-width: 465px)"
+                        srcset="/api/placeholder/100/50"
+                    />
+                    <img
+                        src="/api/placeholder/50/25"
+                        alt="Placeholder image"
+                        usemap="#imagemap"
+                    />
+                </picture>
+            </section>
+
+            <section id="forms">
+                <h2>Form Elements</h2>
+                <form
+                    action="#"
+                    method="post"
+                >
+                    <fieldset>
+                        <legend>Form Elements</legend>
+                        <label for="text-input">Text Input:</label>
+                        <input
+                            type="text"
+                            id="text-input"
+                            name="text-input"
+                        /><br />
+                        <label for="password-input">Password:</label>
+                        <input
+                            type="password"
+                            id="password-input"
+                            name="password-input"
+                        /><br />
+                        <input
+                            type="radio"
+                            id="radio1"
+                            name="radio"
+                            value="1"
+                        />
+                        <label for="radio1">Radio 1</label><br />
+                        <input
+                            type="checkbox"
+                            id="checkbox1"
+                            name="checkbox1"
+                            value="1"
+                        />
+                        <label for="checkbox1">Checkbox 1</label><br />
+                        <label for="textarea">Textarea:</label><br />
+                        <textarea
+                            id="textarea"
+                            name="textarea"
+                            rows="4"
+                            cols="50"
+                        ></textarea
+                        ><br />
+                        <label for="select">Select:</label>
+                        <select
+                            id="select"
+                            name="select"
+                        >
+                            <optgroup label="Group 1">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </optgroup></select
+                        ><br />
+                        <label for="datalist">Datalist:</label>
+                        <input
+                            list="datalist-options"
+                            id="datalist"
+                            name="datalist"
+                        />
+                        <datalist id="datalist-options">
+                            <option value="Option 1"></option>
+                            <option value="Option 2"></option></datalist
+                        ><br />
+                        <meter
+                            value="2"
+                            min="0"
+                            max="10"
+                        >
+                            2 out of 10</meter
+                        ><br />
+                        <progress
+                            value="70"
+                            max="100"
+                        >
+                            70%</progress
+                        ><br />
+                        <output name="result">Output</output><br />
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section id="interactive">
+                <h2>Interactive Elements</h2>
+                <details>
+                    <summary>Details and Summary</summary>
+                    <p>This is the content inside the details element.</p>
+                </details>
+
+                <dialog open>This is an open dialog window.</dialog>
+            </section>
+
+            <aside>
+                <p>This is an aside element.</p>
+            </aside>
+
+            <table>
+                <caption>
+                    Sample Table
+                </caption>
+                <colgroup>
+                    <col
+                        span="2"
+                        style="background-color: #f1f1f1"
+                    />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Table Footer</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+
+        <footer>
+            <address>Contact: <a href="mailto:example@example.com">example@example.com</a></address>
+            <p><small>&copy; 2024 All Rights Reserved</small></p>
+        </footer>
+
+        <template id="template">
+            <p>This is a template element.</p>
+        </template>
+
+        <noscript>
+            <p>Your browser does not support JavaScript!</p>
+        </noscript>
+
+        <!-- Comment -->
+        <div hidden>This div is hidden.</div>
+        <span>Inline span element</span>
+        <bdi>إيان</bdi>
+        <bdo dir="rtl">This text will go right to left.</bdo>
+        <data value="12345">Product ID</data>
+        <wbr />
+        <ruby> 漢 <rt>かん</rt> 字 <rt>じ</rt> </ruby>
+        <script
+            type="module"
+            src="/main.js"
+        ></script>
+    </body>
+</html>

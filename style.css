@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: unset;
+    padding: unset;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+canvas {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+iframe,
+fieldset,
+dialog {
+    max-width: unset;
+    max-height: unset;
+    border: unset;
+    padding: unset;
+}
+
+button {
+    cursor: pointer;
+}
