@@ -1,3 +1,8 @@
+:root {
+    /* allow animations to keywords like height: auto */
+    interpolate-size: allow-keywords;
+}
+
 *,
 *::before,
 *::after {
